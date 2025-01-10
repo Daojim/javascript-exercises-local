@@ -6,7 +6,8 @@ const convertToCelsius = function (fahrenheit) {
 
 const convertToFahrenheit = function (celcius) {
   let cTemp = celcius * (9 / 5) + 32;
-  return cTemp;
+  let roundedCTemp = Math.round(cTemp * 10) / 10;
+  return roundedCTemp;
 };
 
 // Do not edit below this line
