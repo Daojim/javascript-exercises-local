@@ -1,5 +1,7 @@
 const palindromes = function (string) {
-  const newStr = string.replace(/[ .,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+  const newStr = string
+    .replace(/[ .,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+    .toLowerCase();
   const array = Array.from(newStr);
 
   const middleNumber = Math.floor(array.length / 2);
