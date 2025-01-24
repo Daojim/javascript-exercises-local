@@ -1,4 +1,7 @@
 const fibonacci = function (number) {
+  if (number < 0) {
+    return "OOPS";
+  }
   fiboArray = [0, 1];
 
   for (i = 0; i < number; i++) {
