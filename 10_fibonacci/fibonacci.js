@@ -1,5 +1,12 @@
-const fibonacci = function() {
+const fibonacci = function (number) {
+  fiboArray = [0, 1];
 
+  for (i = 0; i < number; i++) {
+    let lastIndex = fiboArray.length - 1;
+    fiboArray.push(fiboArray[lastIndex] + fiboArray[lastIndex - 1]);
+  }
+  console.log(fiboArray);
+  return fiboArray[number];
 };
 
 // Do not edit below this line
