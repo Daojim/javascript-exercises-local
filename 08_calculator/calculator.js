@@ -6,7 +6,9 @@ const subtract = function (num1, num2) {
   return num1 - num2;
 };
 
-const sum = function () {};
+const sum = function (numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+};
 
 const multiply = function () {};
 
