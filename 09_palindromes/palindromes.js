@@ -9,8 +9,6 @@ const palindromes = function (string) {
   const lastIndex = array.length - 1;
 
   for (i = 0; i < middleNumber; i++) {
-    console.log(i + " = " + array[i]);
-    console.log(lastIndex - i + " = " + array[lastIndex - i]);
     if (array[i] !== array[lastIndex - i]) {
       return false;
     }
