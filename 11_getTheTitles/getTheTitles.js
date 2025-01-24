@@ -1,6 +1,5 @@
 const getTheTitles = function (books) {
-  const newArray = books.map((books) => `${books.title}`);
-  return newArray;
+  return books.map((books) => `${books.title}`);
 };
 
 // Do not edit below this line
